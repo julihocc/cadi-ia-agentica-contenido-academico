@@ -1,26 +1,26 @@
 # Ejemplos (placeholders)
 
-Esta carpeta reservará **muestras anonimizadas** que ilustran el pipeline del CADi. En esta versión del repositorio los ejemplos son descriptivos; las ediciones posteriores pueden añadir archivos reales con consentimiento de autoría.
+Esta carpeta reservará **muestras anonimizadas** que ilustran el pipeline del CADi para la **Escuela de Ingeniería y Ciencias (EIC)**. En esta versión del repositorio los ejemplos son descriptivos; las ediciones posteriores pueden añadir archivos reales con consentimiento de autoría.
 
 ## Qué ilustrarán las muestras
 
 ### 1. Brief → prompt de sistema
-- Un brief completo de una unidad de profesional.  
-- El prompt de sistema derivado (rol redactor + restricciones).  
+- Un brief completo de una **unidad de curso STEM** (profesional o posgrado EIC).  
+- El prompt de sistema derivado (rol redactor + restricciones de notación/unidades).  
 - Comentario de “antes/después” mostrando por qué el brief pobre genera ruido.
 
-### 2. Outline y sección de ebook
-- Outline de 6–8 nodos con resultados de aprendizaje.  
+### 2. Outline y sección de ebook / capítulo de curso
+- Outline de 6–8 nodos con resultados de aprendizaje (capítulo de libro de curso STEM).  
 - Una sección `v0` (salida de agente) y `v1` (edición humana).  
-- Diff narrado: qué se cortó, qué se verificó, qué se añadió.
+- Diff narrado: qué se cortó, qué se verificó (ecuaciones, unidades), qué se añadió.
 
 ### 3. Storyboard y notas de orador
-- Tabla storyboard de 10 slides.  
-- Export o captura de 3 slides representativas (gancho, diagrama, cierre).  
-- Notas de orador con tiempos y malentendidos anticipados.
+- Tabla storyboard de 10 slides para un **deck de unidad con notación técnica**.  
+- Export o captura de 3 slides representativas (gancho, diagrama/ecuación, cierre).  
+- Notas de orador con tiempos y malentendidos anticipados (clase vs. conferencia).
 
-### 4. Revisión de artículo + agent log
-- Micro-sección (~1000 palabras) con marcas `[VERIFICAR]`.  
+### 4. Revisión de artículo / guía + agent log
+- Micro-sección tipo **IMRyD** (~1000 palabras) o **guía de laboratorio breve**, con marcas `[VERIFICAR]`.  
 - Salida de tres pases de revisión (claridad / rigor / sesgo).  
 - Agent log llenado de extremo a extremo.  
 - Checklist de calidad con dictamen.
