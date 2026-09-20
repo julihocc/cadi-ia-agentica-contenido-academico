@@ -1,39 +1,42 @@
-# Sesión 1 — Fundamentos agénticos
+# Sesión 1 — Fundamentos agénticos e integridad académica (EIC)
 
-**Duración:** 3 horas  
-**Enfoque:** Distinguir chat de sistemas agénticos; herramientas y orquestación; human-in-the-loop; integridad académica.
+**Duración:** 3 horas (en aula)  
+**Enfoque:** Distinguir chat de sistemas agénticos; human-in-the-loop; integridad académica en contextos EIC (ecuaciones, citas, datos).
 
 ## Objetivos de la sesión
 
 Al finalizar, la persona participante:
 
 1. Explica con ejemplos propios la diferencia entre un chat ad hoc y un flujo agéntico.  
-2. Identifica roles típicos (planificador, redactor, revisor, verificador).  
-3. Completa un **brief de contenido** y un **prompt de sistema** v0.  
-4. Formula una **nota de integridad** (qué automatiza, qué decide la persona).
+2. Identifica roles típicos (planificador, redactor, revisor, verificador) y puntos HITL.  
+3. Formula una **nota de integridad** (qué automatiza, qué decide la persona) ligada a material STEM.  
+4. Propone un **tema EIC tentativo** para el microartefacto del CADi.  
 
 ## Agenda (resumen)
 
 | Bloque | Tiempo | Contenido |
 |--------|--------|-----------|
-| Apertura | 15 min | Mapa del CADi y expectativas |
-| Conceptos | 45 min | Agentes, herramientas, orquestación, riesgos |
-| Demo | 25 min | Flujo brief → agente → decisión humana |
-| Taller | 50 min | Brief + prompt de sistema |
-| Cierre | 25 min | Puesta en común y prep. sesión 2 |
+| Apertura y mapa 40 h | 15 min | Duración 24+16; evidencias; expectativas |
+| Conceptos | 30 min | Agentes, herramientas, memoria; preview orquestación |
+| Integridad y riesgos | 25 min | Alucinación, sesgo, datos; ecuaciones y citas |
+| Demo | 25 min | Flujo con HITL; anti-patrones |
+| Taller | 50 min | Mapa + nota de integridad + tema EIC |
+| Cierre | 15 min | Puesta en común; TI lecturas (bloque A) |
 
 Detalle de tiempos: [`docs/cronograma.md`](../../docs/cronograma.md).
 
 ## Producto esperado
 
-- Brief de contenido (plantilla).  
-- Prompt de sistema v0.  
-- Nota breve de integridad académica (5–8 líneas).
+Mapa conceptual agentes vs. chat + nota de integridad (5–8 líneas) + tema EIC tentativo (E1).
+
+## Trabajo independiente relacionado
+
+Sesión 2: brief, prompt de sistema y orquestación. TI: ~1 h lecturas/demos (bloque A).
 
 ## Archivos de la sesión
 
 - [`guia-facilitador.md`](guia-facilitador.md)  
 - [`actividad.md`](actividad.md)  
-- [`diapositivas.md`](diapositivas.md)  
+- [`diapositivas.md`](diapositivas.md)
 
-Plantillas: [`plantillas/brief-contenido.md`](../../plantillas/brief-contenido.md), [`plantillas/prompt-sistema-agente.md`](../../plantillas/prompt-sistema-agente.md).
+Plantillas: [`plantillas/`](../../plantillas/).
