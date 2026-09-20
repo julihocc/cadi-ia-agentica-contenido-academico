@@ -3,12 +3,14 @@
 | Dato | Valor |
 |------|--------|
 | CADi | IA agéntica para la creación de contenido académico |
-| Clave sugerida | `CADI-IA-AGENTICA-01` |
+| Escuela / unidad académica | Escuela de Ingeniería y Ciencias (EIC) |
+| Clave sugerida | `CADI-EIC-IA-AGENTICA-01` |
 | Duración | 12 horas (4 sesiones × 3 h) |
 | Modalidad | Virtual (Teams) / híbrida |
-| Audiencia | Profesorado de profesional y posgrado |
+| Audiencia | Profesorado de profesional y posgrado de la Escuela de Ingeniería y Ciencias |
 | Instructor | Juliho Castillo |
 | Idioma | Español (México) |
+| Colaboración | CEDDIE / oferta de CADi de la Escuela *(verificar por edición)* |
 
 Documentos relacionados: [Propuesta](propuesta-cadi.md) · [Cronograma](cronograma.md)
 
@@ -16,15 +18,15 @@ Documentos relacionados: [Propuesta](propuesta-cadi.md) · [Cronograma](cronogra
 
 ## 1. Descripción
 
-Este CADi forma al profesorado en el diseño y operación de **flujos de trabajo con IA agéntica** para producir contenido académico de calidad: libros/ebooks, presentaciones didácticas y artículos. Se trabaja con roles de agente, herramientas, orquestación y supervisión humana, integrando criterios de integridad académica y plantillas reutilizables.
+Este CADi forma al profesorado de la **Escuela de Ingeniería y Ciencias (EIC)** en el diseño y operación de **flujos de trabajo con IA agéntica** para producir contenido académico de calidad típico de ingeniería y ciencias: textbooks/ebooks técnicos, guías de laboratorio, presentaciones de clase y conferencia, y artículos de investigación o divulgación técnica. Se trabaja con roles de agente, herramientas, orquestación y supervisión humana, integrando criterios de integridad académica (incluida la verificación de ecuaciones, citas y datos) y plantillas reutilizables.
 
 ---
 
 ## 2. Objetivos generales
 
-1. Comprender el paradigma agéntico aplicado a la producción de materiales académicos.  
-2. Diseñar y ejecutar pipelines asistidos (brief → generación → revisión → calidad).  
-3. Transferir plantillas y prácticas al contexto docente e investigativo del participante.  
+1. Comprender el paradigma agéntico aplicado a la producción de materiales académicos STEM.  
+2. Diseñar y ejecutar pipelines asistidos (brief → generación → revisión → calidad) con énfasis en consistencia de notación, unidades y terminología.  
+3. Transferir plantillas y prácticas al contexto docente e investigativo del participante en la EIC.  
 4. Documentar de forma transparente el uso de IA (agent log) y la autoría humana.
 
 ---
@@ -39,9 +41,9 @@ Ver tabla RA1–RA6 en la [propuesta](propuesta-cadi.md#5-resultados-de-aprendiz
 
 ### Sesión 1 — Fundamentos agénticos (3 h)
 
-**Objetivos:** Distinguir agentes de chat; diseñar un primer flujo con HITL; enmarcar integridad académica.
+**Objetivos:** Distinguir agentes de chat; diseñar un primer flujo con HITL; enmarcar integridad académica en contextos EIC.
 
-**Temas:** Definiciones; herramientas y memoria de contexto; patrones de orquestación; riesgos (alucinación, sesgo, fuga de datos); política de transparencia.
+**Temas:** Definiciones; herramientas y memoria de contexto; patrones de orquestación; riesgos (alucinación, sesgo, fuga de datos; ecuaciones, citas y datos); política de transparencia.
 
 **Producto:** Brief inicial + prompt de sistema v0 + nota de integridad.
 
@@ -51,9 +53,9 @@ Materiales: [`sesiones/01-fundamentos-agenticos/`](../sesiones/01-fundamentos-ag
 
 ### Sesión 2 — Libros y ebooks (3 h)
 
-**Objetivos:** Pasar de brief a outline y secciones; generar figuras/ejercicios; aplicar agente de consistencia.
+**Objetivos:** Pasar de brief a outline y secciones; generar figuras/ejercicios; aplicar agente de consistencia (notación, unidades, glosario).
 
-**Temas:** Arquitectura de obra; granularidad de prompts; tono y nivel; ejercicios alineados a objetivos; glosario y estilo.
+**Temas:** Arquitectura de obra técnica; granularidad de prompts; tono y nivel; ejercicios alineados a objetivos; glosario, notación y estilo.
 
 **Producto:** Outline + 1–2 secciones borrador + reporte de consistencia.
 
@@ -63,9 +65,9 @@ Materiales: [`sesiones/02-libros-y-ebooks/`](../sesiones/02-libros-y-ebooks/)
 
 ### Sesión 3 — Presentaciones (3 h)
 
-**Objetivos:** Alinear deck a objetivos de aprendizaje; construir arco narrativo; generar notas de orador.
+**Objetivos:** Alinear deck a objetivos de aprendizaje; construir arco narrativo; generar notas de orador (clase o conferencia técnica).
 
-**Temas:** De objetivos a storyboard; densidad visual; accesibilidad; variantes (clase, conferencia, pitch académico).
+**Temas:** De objetivos a storyboard; densidad visual y notación en slides; accesibilidad; variantes (clase, conferencia, pitch académico).
 
 **Producto:** Storyboard + deck mínimo viable + notas de orador.
 
@@ -79,7 +81,8 @@ Materiales: [`sesiones/03-presentaciones/`](../sesiones/03-presentaciones/)
 
 **Temas:** IMRyD y variantes; citas y verificación; agentes de claridad/rigor; síntesis del pipeline completo.
 
-**Producto (acreditación):** Microartefacto + agent log + checklist de calidad.
+**Producto (acreditación):** Microartefacto + agent log + checklist de calidad.  
+Opciones preferidas EIC: capítulo corto de libro de curso STEM, deck de unidad con notación técnica, sección de artículo tipo IMRyD, o guía de laboratorio breve.
 
 Materiales: [`sesiones/04-articulos-y-revision/`](../sesiones/04-articulos-y-revision/)
 
@@ -91,7 +94,7 @@ Taller + proyecto breve. Cada sesión combina:
 
 1. Marco conceptual breve (15–25 min).  
 2. Demostración en vivo del flujo agéntico.  
-3. Práctica guiada con plantillas.  
+3. Práctica guiada con plantillas sobre material propio EIC.  
 4. Puesta en común y criterios de calidad.  
 5. Encargo corto hacia la siguiente sesión (cuando aplique).
 
@@ -126,7 +129,7 @@ Principios operativos del CADi (no sustituyen política institucional):
 
 1. La persona docente es **autora responsable** del contenido publicado o impartido.  
 2. Toda asistencia sustancial de IA debe poder **documentarse** (agent log).  
-3. Afirmaciones factuales y citas requieren **verificación humana**.  
+3. Afirmaciones factuales, citas, ecuaciones y datos requieren **verificación humana**.  
 4. No se deben ingresar datos personales sensibles ni material confidencial no autorizado a herramientas externas.  
 5. Se declara el uso de IA según las normas del medio de publicación o del curso.
 
@@ -143,4 +146,4 @@ Ver [`recursos/lecturas.md`](../recursos/lecturas.md). Se actualizará por edici
 ## 10. Contacto
 
 Instructor: Juliho Castillo — *(correo institucional a completar)*.  
-Coordinación académica / CEDDIE: *(contacto de la edición)*.
+Escuela de Ingeniería y Ciencias (EIC) · Coordinación académica / CEDDIE: *(contacto de la edición)*.
