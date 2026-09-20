@@ -1,11 +1,12 @@
 # IA agéntica para la creación de contenido académico
 
 **CADi — Escuela de Ingeniería y Ciencias (EIC) · Tecnológico de Monterrey**  
-Duración: **12 horas** (4 sesiones × 3 h)  
+Duración: **40 horas totales** — **24 h en aula** (8 sesiones × 3 h) + **16 h fuera de aula** (trabajo independiente / asíncrono)  
 Audiencia: profesorado de **profesional y posgrado** de la **Escuela de Ingeniería y Ciencias**  
 Clave sugerida: `CADI-EIC-IA-AGENTICA-01` *(placeholder)*  
 Instructor: **Juliho Castillo**  
-Colaboración: CEDDIE / oferta de CADi de la Escuela *(verificar por edición)*
+Colaboración: CEDDIE / oferta de CADi de la Escuela *(verificar por edición)*  
+Idioma: Español (México)
 
 Este repositorio concentra la propuesta, el sílabo, el cronograma, materiales por sesión, plantillas y recursos de un CADi orientado a diseñar **flujos de trabajo con IA agéntica** para producir y mejorar materiales típicos de ingeniería y ciencias:
 
@@ -23,12 +24,14 @@ La idea central no es “usar un chat”, sino **orquestar agentes** (roles, her
 
 Al concluir el CADi, el profesorado de la EIC será capaz de:
 
-1. Distinguir **chat conversacional** de **sistemas agénticos** (herramientas, orquestación, human-in-the-loop).
-2. Diseñar un **brief de contenido** y un **prompt de sistema** reutilizable para un agente de producción académica.
-3. Generar, con supervisión humana, un **esqueleto de libro/ebook** (outline → secciones → figuras/ejercicios → consistencia de notación y terminología).
-4. Construir una **presentación didáctica** alineada a objetivos de aprendizaje, con narrativa y notas de orador.
-5. Aplicar agentes de **redacción y revisión** a un micro-artículo o sección académica (p. ej. IMRyD), documentando el proceso en un **registro de agente (agent log)**.
-6. Evaluar la calidad del resultado con una **checklist de calidad** y criterios de integridad académica.
+1. Distinguir **chat conversacional** de **sistemas agénticos** (herramientas, orquestación, human-in-the-loop) con marco de integridad académica EIC.
+2. Diseñar un **brief de contenido**, un **prompt de sistema** y un esquema de **orquestación multi-rol** reutilizable.
+3. Generar, con supervisión humana, la **arquitectura y outline** de un libro/ebook técnico.
+4. Producir **secciones, ejercicios/figuras** y un pase de **consistencia** (notación, unidades, terminología).
+5. Construir **storyboard y narrativa** de una presentación alineada a objetivos de aprendizaje.
+6. Elaborar un **deck mínimo viable** con notas de orador y criterios de accesibilidad.
+7. Estructurar y redactar (asistido) un **micro-artículo o sección** con verificación de citas/datos.
+8. Aplicar **agentes de revisión**, documentar el proceso en un **agent log** y cerrar con **checklist de calidad** + microartefacto EIC.
 
 ---
 
@@ -36,32 +39,49 @@ Al concluir el CADi, el profesorado de la EIC será capaz de:
 
 | Ruta | Contenido |
 |------|-----------|
-| [`docs/propuesta-cadi.md`](docs/propuesta-cadi.md) | Ficha tipo CEDDIE (justificación EIC, resultados, evaluación) |
-| [`docs/silabo.md`](docs/silabo.md) | Sílabo completo del CADi |
-| [`docs/cronograma.md`](docs/cronograma.md) | Agenda sesión por sesión (4 × 3 h) |
-| [`sesiones/`](sesiones/) | Materiales por sesión (README, guía, actividad, diapositivas) |
+| [`docs/propuesta-cadi.md`](docs/propuesta-cadi.md) | Ficha tipo CEDDIE (justificación EIC, 40 h, resultados, evaluación) |
+| [`docs/silabo.md`](docs/silabo.md) | Sílabo completo (8 sesiones + tabla de 16 h independientes) |
+| [`docs/cronograma.md`](docs/cronograma.md) | Agenda 8 × 3 h en aula + presupuesto fuera de aula |
+| [`sesiones/`](sesiones/) | Materiales por sesión 01–08 (README, guía, actividad, diapositivas) |
 | [`plantillas/`](plantillas/) | Brief, checklist de calidad y prompt de sistema |
 | [`ejemplos/`](ejemplos/) | Descripción de muestras ilustrativas (placeholders) |
 | [`recursos/`](recursos/) | Lecturas y herramientas curadas |
 | [`LICENSE`](LICENSE) | Licencia MIT |
 
-### Sesiones
+### Sesiones en aula (8 × 3 h)
 
-1. **[Fundamentos agénticos](sesiones/01-fundamentos-agenticos/)** — agentes vs. chat, herramientas, orquestación, integridad académica  
-2. **[Libros y ebooks](sesiones/02-libros-y-ebooks/)** — outline → secciones → figuras/ejercicios → agentes de consistencia  
-3. **[Presentaciones](sesiones/03-presentaciones/)** — objetivos → deck narrativo + notas de orador  
-4. **[Artículos y revisión](sesiones/04-articulos-y-revision/)** — estructura, borrador, agentes de revisión; microartefacto + agent log  
+1. **[Fundamentos agénticos e integridad académica (EIC)](sesiones/01-fundamentos-agenticos/)** — agentes vs. chat, riesgos, transparencia  
+2. **[Briefs, prompts y orquestación](sesiones/02-briefs-prompts-orquestacion/)** — brief, prompt de sistema, multi-rol HITL  
+3. **[Libros/ebooks I — arquitectura y outline](sesiones/03-libros-arquitectura-outline/)** — estructura de obra STEM  
+4. **[Libros/ebooks II — secciones y consistencia](sesiones/04-libros-secciones-consistencia/)** — secciones, ejercicios, notación  
+5. **[Presentaciones I — narrativa y storyboard](sesiones/05-presentaciones-narrativa/)** — objetivos → arco → storyboard  
+6. **[Presentaciones II — deck, notas y accesibilidad](sesiones/06-presentaciones-deck-notas/)** — deck MV, notas de orador  
+7. **[Artículos I — estructura y borrador](sesiones/07-articulos-estructura-borrador/)** — IMRyD, borrador, citas  
+8. **[Artículos II — revisión y cierre](sesiones/08-articulos-revision-cierre/)** — revisión agéntica, showcase, microartefacto  
+
+### Fuera de aula (16 h)
+
+| Bloque | Horas |
+|--------|------:|
+| Lecturas y demos guiadas | 4 h |
+| Práctica con stack de agentes y plantillas | 4 h |
+| Avance del microartefacto entre sesiones | 6 h |
+| Agent log + checklist + reflexión final | 2 h |
+| **Total** | **16 h** |
+
+Detalle: [sílabo §5](docs/silabo.md#5-trabajo-fuera-de-aula-16-h) · [cronograma parte B](docs/cronograma.md#parte-b--trabajo-fuera-de-aula-16-h).
 
 ---
 
 ## Cómo usar este repositorio (facilitadores)
 
 1. Leer primero la [propuesta](docs/propuesta-cadi.md) y el [sílabo](docs/silabo.md) para alinear expectativas con CEDDIE / coordinación académica de la EIC.  
-2. Revisar el [cronograma](docs/cronograma.md) y ajustar tiempos según modalidad (Teams / híbrido).  
+2. Revisar el [cronograma](docs/cronograma.md) y ajustar tiempos según modalidad (Teams / híbrido / presencial).  
 3. Antes de cada sesión, abrir la carpeta correspondiente: `README` (visión), `guia-facilitador.md` (rutas y tiempos), `actividad.md` (práctica) y `diapositivas.md` (outline de slides).  
 4. Compartir las [plantillas](plantillas/) al inicio; los participantes las reutilizan a lo largo del CADi.  
-5. En la sesión 4, cerrar con el **microartefacto + agent log** como evidencia de acreditación (capítulo STEM, deck técnico, sección IMRyD o guía de laboratorio breve).  
-6. Verificar políticas institucionales vigentes (integridad académica, uso de IA, datos) con CEDDIE antes de cada edición.
+5. Explicitar desde el día 1 las **16 h de trabajo independiente** y el canal de evidencia.  
+6. En la sesión 8, cerrar con el **microartefacto + agent log** como evidencia de acreditación (capítulo STEM, deck técnico, sección IMRyD o guía de laboratorio breve).  
+7. Verificar políticas institucionales vigentes (integridad académica, uso de IA, datos) con CEDDIE antes de cada edición.
 
 **Nota:** Los materiales están en español (México / tono Tec). Las herramientas se presentan de forma **agnóstica a proveedor** cuando es posible; cada edición puede fijar un stack concreto.
 
@@ -70,10 +90,10 @@ Al concluir el CADi, el profesorado de la EIC será capaz de:
 ## Modalidad y logística (resumen)
 
 - **Escuela / unidad:** Escuela de Ingeniería y Ciencias (EIC).  
-- **Modalidad sugerida:** virtual (Microsoft Teams) o híbrida.  
+- **Modalidad sugerida:** virtual (Microsoft Teams), híbrida o presencial según edición.  
 - **Cupo sugerido:** 20–30 participantes.  
-- **Prerrequisitos:** experiencia docente en EIC (o afín); manejo básico de IA generativa (chat); cuenta institucional.  
-- **Evaluación:** participación + entregables de sesión + microartefacto final con agent log y checklist de calidad.
+- **Prerrequisitos:** experiencia docente en EIC (o afín); manejo básico de IA generativa (chat); cuenta institucional; disponibilidad para ~16 h independientes.  
+- **Evaluación:** participación + entregables de sesión + trabajo independiente + microartefacto final con agent log y checklist de calidad.
 
 Detalles completos en la [propuesta CADi](docs/propuesta-cadi.md).
 
