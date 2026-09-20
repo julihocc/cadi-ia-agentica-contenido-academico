@@ -3,6 +3,8 @@
 > Formato orientativo tipo CEDDIE. Campos y cupos son **sugerencias**; verificar con CEDDIE / política institucional vigente antes de la oferta oficial.  
 > Oferta orientada a la **Escuela de Ingeniería y Ciencias (EIC)** del Tecnológico de Monterrey, en colaboración con CEDDIE / oferta de CADi de la Escuela.
 
+> **Ficha de autorización (líder EIC):** [ficha-autorizacion-lider-eic.md](ficha-autorizacion-lider-eic.md)
+
 ---
 
 ## 1. Identificación

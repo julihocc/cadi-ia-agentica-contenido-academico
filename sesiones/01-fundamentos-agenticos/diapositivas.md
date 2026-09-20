@@ -1,40 +1,43 @@
-# Outline de diapositivas — Sesión 1: Fundamentos agénticos e integridad académica (EIC)
+# Diapositivas — Sesión 1: Fundamentos agénticos e integridad académica (EIC)
 
-> Usar como guion para construir el deck real (PowerPoint / Google Slides / Marp). ~16–22 slides.
+**Deck canónico (Marp):** [`diapositivas-sesion-01.md`](diapositivas-sesion-01.md) — ~20 slides, 16:9.
 
-## Bloque A — Apertura
-1. Portada: CADi + Sesión 1 + instructor (Juliho Castillo) + EIC
-2. Duración 40 h (24 aula + 16 independientes) y producto del día
+**Exportar Marp:** extensión *Marp for VS Code* (vista previa / export PDF o PPTX) o `npx @marp-team/marp-cli diapositivas-sesion-01.md -o diapositivas-sesion-01.pdf`.
+
+## Outline (TOC → deck)
+
+### Bloque A — Apertura
+1. Portada (CADi, sesión 1, Juliho Castillo, EIC)
+2. Mapa 40 h (24 aula + 16 independientes) y producto del día (E1)
 3. Resultados de aprendizaje de la sesión
-4. Normas de taller e integridad *(enlace institucional — verificar vigencia)*
+4. Normas de taller e integridad *(verificar con CEDDIE)*
 
-## Bloque B — Conceptos
-5. De chat a agente: definición operativa
-6. Anatomía de un agente (rol, memoria, herramientas, parada)
+### Bloque B — Conceptos
+5. De chat a agente
+6. Anatomía de un agente
 7. Preview de orquestación (detalle en sesión 2)
-8. Human-in-the-loop: dónde insertar aprobaciones
-9. Mapa de roles para contenido académico STEM
+8. Human-in-the-loop (HITL)
+9. Roles STEM (planificador, redactor, revisor, verificador)
 
-## Bloque C — Integridad
-10. Riesgos: alucinación, citas, sesgo, datos
-11. Ecuaciones, unidades y afirmaciones empíricas
-12. Transparencia y agent log (adelanto sesiones 7–8)
+### Bloque C — Integridad
+10. Riesgos (alucinación, citas, sesgo, datos)
+11. Ecuaciones, unidades y citas
+12. Transparencia y agent log
 
-## Bloque D — Demo y taller
+### Bloque D — Demo y taller
 13. Caso: idea vaga vs. flujo con HITL
-14. Anti-patrones (prompts eternos, cero restricciones)
-15. Instrucciones de la actividad
+14. Anti-patrones
+15. Instrucciones de la actividad (E1)
 16. Rúbrica rápida
 
-## Bloque E — Cierre
-17. Aprendizajes del grupo
-18. TI bloque A (lecturas/demos) y prep sesión 2
-19. Recursos y canal de dudas
+### Bloque E — Cierre
+17. Takeaways
+18. TI bloque A (~1 h)
+19. Prep sesión 2
+20. Cierre / gracias
 
+## Notas
 
-## Notas de diseño
-
-- Máximo 1 idea fuerte por slide.  
-- Evitar paredes de texto; mover detalle a la guía del facilitador.  
+- Una idea fuerte por slide; el detalle vive en la guía del facilitador.  
 - Mantener marcadores CEDDIE / verificar política institucional donde corresponda.  
-- Incluir recordatorio de las **16 h** de trabajo independiente cuando haya encargo TI.
+- Recordar las **16 h** de trabajo independiente al asignar el TI.

@@ -18,6 +18,8 @@ La idea central no es “usar un chat”, sino **orquestar agentes** (roles, her
 
 > Documentos de referencia: [Propuesta CADi](docs/propuesta-cadi.md) · [Sílabo](docs/silabo.md) · [Cronograma](docs/cronograma.md)
 
+> **Autorización líder EIC (una página):** [docs/ficha-autorizacion-lider-eic.md](docs/ficha-autorizacion-lider-eic.md)
+
 ---
 
 ## ¿Qué aprenderá el participante?
@@ -40,6 +42,7 @@ Al concluir el CADi, el profesorado de la EIC será capaz de:
 | Ruta | Contenido |
 |------|-----------|
 | [`docs/propuesta-cadi.md`](docs/propuesta-cadi.md) | Ficha tipo CEDDIE (justificación EIC, 40 h, resultados, evaluación) |
+| [`docs/ficha-autorizacion-lider-eic.md`](docs/ficha-autorizacion-lider-eic.md) | Una página para autorización del/de la líder EIC |
 | [`docs/silabo.md`](docs/silabo.md) | Sílabo completo (8 sesiones + tabla de 16 h independientes) |
 | [`docs/cronograma.md`](docs/cronograma.md) | Agenda 8 × 3 h en aula + presupuesto fuera de aula |
 | [`sesiones/`](sesiones/) | Materiales por sesión 01–08 (README, guía, actividad, diapositivas) |

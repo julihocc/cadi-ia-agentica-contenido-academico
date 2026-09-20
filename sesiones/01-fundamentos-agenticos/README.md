@@ -37,6 +37,9 @@ Sesión 2: brief, prompt de sistema y orquestación. TI: ~1 h lecturas/demos (bl
 
 - [`guia-facilitador.md`](guia-facilitador.md)  
 - [`actividad.md`](actividad.md)  
-- [`diapositivas.md`](diapositivas.md)
+- [`diapositivas-sesion-01.md`](diapositivas-sesion-01.md) — **deck Marp canónico** (~20 slides)  
+- [`diapositivas.md`](diapositivas.md) — outline / TOC que apunta al deck  
+
+**Exportar Marp:** extensión *Marp for VS Code*, o `npx @marp-team/marp-cli diapositivas-sesion-01.md -o diapositivas-sesion-01.pdf`.
 
 Plantillas: [`plantillas/`](../../plantillas/).
