@@ -2,49 +2,50 @@
 
 ## Antes de la sesión
 
-- [ ] Confirmar enlace Teams / aula híbrida y grabación *(si aplica política)*.  
-- [ ] Compartir plantillas de brief y prompt de sistema.  
-- [ ] Preparar demo en vivo con un tema académico neutro (p. ej. “unidad de pensamiento computacional”).  
-- [ ] Tener a la mano el texto institucional de integridad / uso de IA *(verificar vigencia con CEDDIE)*.  
-- [ ] Pedir a participantes traer un tema propio (aunque sea tentativo).
+- [ ] Confirmar modalidad (Teams / híbrido / presencial) y materiales.  
+- [ ] Revisar entregables de la sesión anterior (muestra).  
+- [ ] Preparar demo en vivo con ejemplo STEM neutro EIC.  
+- [ ] Recordar política de integridad / uso de IA *(verificar vigencia con CEDDIE)*.  
+- [ ] Recordar presupuesto de trabajo independiente (bloques A–D; total 16 h).
 
 ## Mensajes clave
 
-1. **Agente ≠ chat:** un agente tiene rol, restricciones, herramientas y criterio de parada; el chat es conversación abierta.  
-2. **HITL no es opcional** en contenido académico: la persona valida hechos, citas y tono.  
-3. **El brief es el contrato** entre docente y sistema: sin brief claro, la generación es ruido elegante.  
-4. **Transparencia:** documentar asistencia de IA es parte del oficio, no un trámite.
+1. **Agente ≠ chat:** un agente tiene rol, restricciones, herramientas y criterio de parada.  
+2. **HITL no es opcional** en contenido académico STEM: la persona valida hechos, ecuaciones, citas y tono.  
+3. **Transparencia:** documentar asistencia de IA es parte del oficio.  
+4. **40 horas:** el trabajo independiente (16 h) es parte del diseño, no “tarea opcional”.  
 
 ## Ruta sugerida (3 h)
 
 ### 0:00–0:15 — Apertura
-Presentar resultados del CADi, evidencias y “contrato de taller” (cámaras, breakouts, respeto a datos).
+Presentar resultados del CADi (RA1–RA8), evidencias E1–E8, tabla de 16 h TI y “contrato de taller”.
 
-### 0:15–0:40 — Agentes vs. chat
-Usar un diagrama simple: Usuario → Orquestador → Agentes (roles) → Herramientas → Humano aprueba.  
-Pregunta al grupo: *¿Dónde falló su último uso de IA en materiales?*
+### 0:15–0:45 — Agentes vs. chat
+Diagrama: Usuario → Orquestador → Agentes → Herramientas → Humano aprueba.  
+Pregunta: *¿Dónde falló su último uso de IA en materiales EIC?*
 
-### 0:40–1:00 — Integridad y riesgos
-Cubrir: alucinación, citas inventadas, sesgo, filtración de datos, autoría.  
-Enfatizar: verificar política institucional vigente; no inventar citas de reglamentos.
+### 0:45–1:10 — Integridad y riesgos
+Alucinación, citas inventadas, sesgo, filtración de datos, autoría; énfasis en ecuaciones/unidades.  
+Derivar dudas normativas a CEDDIE; no improvisar política.
 
-### 1:10–1:35 — Demo
-Mostrar: (1) brief pobre vs. brief bueno; (2) prompt de sistema con rol y restricciones; (3) salida; (4) edición humana explícita.
+### 1:20–1:45 — Demo
+Brief pobre vs. bueno (adelanto); salida; edición humana explícita.
 
-### 1:35–2:25 — Taller
-Breakouts de 2–3 personas o trabajo individual. Circulación del facilitador con rúbrica rápida (claridad del brief, restricciones, criterio de parada).
+### 1:45–2:35 — Taller
+Individual o parejas. Circulación con rúbrica (claridad del mapa, seriedad de la nota, tema viable).
 
-### 2:25–3:00 — Cierre
-3 voluntarios comparten. Asignar prep para sesión 2: bosquejo de outline de libro/unidad.
+### 2:35–3:00 — Cierre
+3 voluntarios. Asignar TI bloque A y prep de brief para sesión 2.
+
 
 ## Contingencias
 
-- Si la herramienta falla: continuar con diseño de brief/prompt en documento colaborativo.  
-- Si el grupo es muy heterogéneo: ofrecer “pista rápida” (plantilla prellenada) y “pista avanzada” (multi-agente).  
-- Si aparecen dudas legales/políticas: anotar y derivar a CEDDIE; no improvisar normativa.
+- Si la herramienta falla: continuar con diseño en documento colaborativo / markdown.  
+- Grupo heterogéneo: pista rápida (plantilla prellenada) y pista avanzada (multi-agente).  
+- Dudas legales/políticas: anotar y derivar a CEDDIE; no improvisar normativa.
 
 ## Checklist post-sesión
 
-- [ ] Recolectar o recordar canal de entrega de E1.  
-- [ ] Anotar fricciones de la demo para mejorar sesión 2.  
-- [ ] Enviar recordatorio de outline preliminar.
+- [ ] Recordar canal de entrega de E1.  
+- [ ] Asignar / recordar TI del intervalo (ver cronograma parte B).  
+- [ ] Anotar fricciones de la demo para la siguiente sesión.
