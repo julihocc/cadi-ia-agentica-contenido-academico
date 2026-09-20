@@ -1,49 +1,49 @@
-# Actividad — Sesión 1: Brief y prompt de sistema v0
+# Actividad — Sesión 1: Mapa agéntico, nota de integridad y tema EIC
 
 ## Objetivo
 
-Diseñar el punto de partida de su flujo agéntico: un **brief de contenido** claro y un **prompt de sistema** reutilizable, más una **nota de integridad**.
+Producir el entregable de la sesión en el marco del CADi EIC (40 h: 24 aula + 16 independientes).
 
 ## Tiempo estimado
 
-50 minutos (taller) + 10 minutos de refinamiento individual al cierre.
+~50–80 minutos de taller en aula (ver cronograma) + refinamiento en trabajo independiente si aplica.
 
 ## Instrucciones
 
-### Parte A — Brief (25 min)
+### Parte A — Mapa agentes vs. chat (20 min)
 
-1. Abra [`plantillas/brief-contenido.md`](../../plantillas/brief-contenido.md).  
-2. Elija un material real o próximo (capítulo, unidad, artículo, deck).  
-3. Complete: audiencia, objetivo de aprendizaje, alcance, tono, restricciones (qué **no** debe inventar el agente), criterios de éxito.  
-4. Marque en una frase: *“El humano decide siempre sobre X.”*
+1. En una hoja o documento, dibuje o liste: **Usuario → Orquestador → Roles → Herramientas → Aprobación humana**.  
+2. Anote un ejemplo propio EIC (capítulo, guía de lab, deck, sección de artículo) donde un chat ad hoc le falló.  
+3. Marque en el mapa *dónde* insertaría un punto HITL obligatorio.
 
-### Parte B — Prompt de sistema (20 min)
+### Parte B — Nota de integridad (20 min)
 
-1. Abra [`plantillas/prompt-sistema-agente.md`](../../plantillas/prompt-sistema-agente.md).  
-2. Defina rol, misión, herramientas permitidas (aunque sean conceptuales), formato de salida y criterio de parada.  
-3. Incluya una instrucción explícita de **no fabricar citas** y de señalar incertidumbre.
+Escriba 5–8 líneas:
 
-### Parte C — Nota de integridad (5 min)
-
-Escriba 5–8 líneas respondiendo:
-
-- ¿Qué partes del flujo puede automatizar con confianza?  
-- ¿Qué debe verificar una persona experta en el dominio?  
+- ¿Qué partes del flujo puede automatizar con confianza en material STEM?  
+- ¿Qué debe verificar una persona experta (ecuaciones, unidades, citas, datos)?  
 - ¿Cómo declarará el uso de IA si publica o imparte el material?
+
+> No cite reglamentos inventados; use solo política institucional vigente *(verificar con CEDDIE)*.
+
+### Parte C — Tema EIC tentativo (10 min)
+
+Declare el microartefacto tentativo: capítulo STEM / guía de laboratorio / deck técnico / sección IMRyD. Una frase de audiencia y una de alcance.
+
 
 ## Entregable (E1)
 
-Archivo único (markdown o documento) con: brief + prompt v0 + nota de integridad. Nombre sugerido: `Apellido_Sesion1_brief-prompt.md`.
+Archivo único con mapa (texto o diagrama), nota de integridad y tema EIC. Nombre sugerido: `Apellido_Sesion1_integridad-tema.md`.
 
 ## Criterios de calidad (rápidos)
 
 | Criterio | Bien | A mejorar |
 |----------|------|-----------|
-| Audiencia y objetivo | Específicos y medibles | Genéricos (“estudiantes”) |
-| Restricciones | Explicitan no-citas inventadas / datos sensibles | Ausentes |
-| Criterio de parada | El agente sabe cuándo detenerse y pedir humano | Bucle indefinido |
-| Reutilización | Prompt sirve para más de un capítulo/unidad | Solo ad hoc |
+| Alineación EIC / STEM | Audiencia, notación u objetivos explícitos | Genérico, sin contexto de curso |
+| Supervisión humana | Decisiones y `[VERIFICAR]` visibles | Aceptación pasiva de la salida |
+| Reutilización | Sirve para más de un capítulo/unidad | Solo ad hoc |
+| Integridad | Sin citas inventadas; restricciones claras | Omite verificación |
 
 ## Extensión (opcional)
 
-Defina un segundo rol (revisor) en 10 líneas y describa cómo se orquesta con el redactor.
+Documente 5–10 líneas en el agent log sobre esta sesión (herramienta, rol, decisión humana).
