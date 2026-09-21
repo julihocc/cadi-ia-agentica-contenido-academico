@@ -6,6 +6,17 @@ Licencia: [MIT](LICENSE)
 
 > **Todo el contenido del curso está en LaTeX** bajo `tex/`. Este README es solo un puntero de compilación y mapa del árbol.
 
+## PDFs listos (líder / sesión 1)
+
+Descargas compiladas en [`pdf/`](pdf/):
+
+| Archivo | Uso |
+|---------|-----|
+| [`pdf/ficha-autorizacion-lider-eic.pdf`](pdf/ficha-autorizacion-lider-eic.pdf) | Ficha de autorización **lista para líder EIC** (instructor, correo CCM, campus) |
+| [`pdf/sesion-01-beamer.pdf`](pdf/sesion-01-beamer.pdf) | Deck Beamer de la **sesión 1** (fundamentos agénticos e integridad) |
+
+Fuentes: `tex/docs/ficha-autorizacion-lider-eic.tex`, `tex/beamer/sesion-01.tex`.
+
 ## Compilar
 
 Requisitos: `pdflatex` + `latexmk` (TeX Live / MacTeX).
