@@ -1,0 +1,268 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{IA agéntica para la creación de contenido académico}
+\subtitle{Sesión 1 --- Fundamentos agénticos e integridad (EIC)}
+\author{Juliho Castillo}
+\institute{CADi 40\,h · Escuela de Ingeniería y Ciencias\\
+Tecnológico de Monterrey}
+\date{Clave sugerida: \texttt{CADI-EIC-IA-AGENTICA-01}}
+
+\begin{document}
+
+% --- 1 Portada ---
+\begin{frame}
+\titlepage
+\end{frame}
+
+% --- 2 Mapa 40h ---
+\begin{frame}{Mapa del CADi (40 horas)}
+\begin{itemize}
+\item \textbf{24\,h en aula} $\rightarrow$ 8 sesiones $\times$ 3\,h
+\item \textbf{16\,h fuera de aula} $\rightarrow$ lecturas, práctica y microartefacto
+\item Hoy: \textbf{Sesión 1 / 8} --- bases + integridad EIC
+\item Producto del día (\textbf{E1}): mapa + nota de integridad + tema tentativo
+\end{itemize}
+\begin{block}{Diseño del CADi}
+El trabajo independiente es parte del diseño, no ``tarea opcional''.
+\end{block}
+\end{frame}
+
+% --- 3 RA ---
+\begin{frame}{Resultados de aprendizaje (sesión)}
+Al finalizar, usted podrá:
+\begin{enumerate}
+\item Explicar \textbf{chat ad hoc} vs.\ \textbf{flujo agéntico} con un ejemplo EIC propio
+\item Identificar \textbf{roles} (planificador, redactor, revisor, verificador) y puntos \textbf{HITL}
+\item Redactar una \textbf{nota de integridad} (qué automatiza / qué decide la persona)
+\item Proponer un \textbf{tema EIC tentativo} para el microartefacto
+\end{enumerate}
+\end{frame}
+
+% --- 4 Normas ---
+\begin{frame}{Normas de taller e integridad}
+\begin{itemize}
+\item Material propio EIC: capítulo, guía de lab, deck o sección de artículo
+\item Supervisión humana obligatoria en hechos, ecuaciones, citas y datos
+\item Declarar asistencia de IA cuando publique o imparta el material
+\item \textbf{No improvisar normativa:} política de integridad / uso de IA $\rightarrow$ verificar con \textbf{CEDDIE} \emph{(enlace y vigencia por edición)}
+\end{itemize}
+\end{frame}
+
+% --- 5 Chat vs agente ---
+\begin{frame}{De chat a agente}
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+\toprule
+\textbf{Chat ad hoc} & \textbf{Flujo agéntico} \\
+\midrule
+Una conversación suelta & Roles y restricciones explícitas \\
+Contexto frágil & Memoria / brief reutilizable \\
+``Pide y copia'' & Herramientas + criterio de parada \\
+Difícil de auditar & Decisiones humanas visibles (HITL) \\
+\bottomrule
+\end{tabularx}
+\vspace{1em}
+\textbf{Definición operativa:} un agente actúa con \textbf{rol}, \textbf{límites}, \textbf{herramientas} y \textbf{parada} ---bajo aprobación humana.
+\end{frame}
+
+% --- 6 Anatomía ---
+\begin{frame}{Anatomía de un agente}
+\begin{itemize}
+\item \textbf{Rol:} qué hace (planificar, redactar, revisar\ldots)
+\item \textbf{Restricciones:} nivel, notación, qué \emph{no} inventar
+\item \textbf{Memoria / contexto:} brief, glosario, RA del curso
+\item \textbf{Herramientas:} plantillas, búsqueda, checklists
+\item \textbf{Criterio de parada:} cuándo detenerse y pedir humano
+\end{itemize}
+\begin{alertblock}{Sin estas piezas}
+Solo hay un chat con disfraz de ``agente''.
+\end{alertblock}
+\end{frame}
+
+% --- 7 Orquestación preview ---
+\begin{frame}{Preview: orquestación (sesión 2)}
+\begin{center}
+\texttt{Usuario $\rightarrow$ Orquestador $\rightarrow$ Roles $\rightarrow$ Herramientas $\rightarrow$ Humano aprueba}
+\end{center}
+\begin{itemize}
+\item Secuencial: plan $\rightarrow$ borrador $\rightarrow$ revisión
+\item Crítico-humano: el humano es un ``nodo'' obligatorio
+\item Paralelo ligero: dos roles, una fusión supervisada
+\end{itemize}
+Hoy solo el mapa; el diseño detallado es de la \textbf{sesión 2}.
+\end{frame}
+
+% --- 8 HITL ---
+\begin{frame}{Human-in-the-loop (HITL)}
+Inserte aprobación humana \textbf{antes} de:
+\begin{itemize}
+\item Afirmar ecuaciones, unidades o resultados numéricos
+\item Citar fuentes o datos empíricos
+\item Publicar / subir a LMS / compartir con estudiantes
+\item Cambiar notación o glosario de un curso
+\end{itemize}
+\begin{alertblock}{STEM académico}
+HITL no es ``opcional'' en contenido académico STEM.
+\end{alertblock}
+\end{frame}
+
+% --- 9 Roles STEM ---
+\begin{frame}{Roles útiles en contenido STEM (EIC)}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Rol & Pregunta que responde \\
+\midrule
+Planificador & ¿Qué estructura y RA? \\
+Redactor & ¿Qué texto / sección? \\
+Revisor & ¿Qué falla en claridad o tono? \\
+Verificador & ¿Ecuaciones, unidades, citas OK? \\
+\bottomrule
+\end{tabularx}
+\vspace{1em}
+Combine 2--4 roles; no necesite un ejército el día 1.
+\end{frame}
+
+% --- 10 Riesgos ---
+\begin{frame}{Riesgos con IA en materiales EIC}
+\begin{itemize}
+\item \textbf{Alucinación:} hechos, fórmulas o procedimientos inventados
+\item \textbf{Citas fantasma:} referencias que no existen
+\item \textbf{Sesgo / tono} inadecuado al nivel del curso
+\item \textbf{Datos sensibles} pegados al chat sin control
+\item \textbf{Autoría opaca:} no se sabe qué decidió la persona
+\end{itemize}
+Mitigar = restricciones + HITL + registro (agent log).
+\end{frame}
+
+% --- 11 Ecuaciones ---
+\begin{frame}{Ecuaciones, unidades y citas}
+Checklist rápido antes de aceptar una salida:
+\begin{itemize}
+\item[$\square$] Símbolos coherentes con el glosario del curso
+\item[$\square$] Unidades SI (o las del programa) sin mezclar
+\item[$\square$] Cada cita existe y dice lo que se afirma
+\item[$\square$] Afirmaciones empíricas con fuente o marcadas \texttt{[VERIFICAR]}
+\end{itemize}
+En duda: \textbf{no publicar}; marcar y verificar con experta/o.
+\end{frame}
+
+% --- 12 Transparencia ---
+\begin{frame}{Transparencia y agent log (adelanto)}
+Documente en pocas líneas:
+\begin{itemize}
+\item Herramienta / modelo usado
+\item Rol del agente y prompt/brief
+\item Qué generó la IA
+\item Qué cambió o rechazó la persona
+\item Qué quedó pendiente de verificar
+\end{itemize}
+Sesiones \textbf{7--8} profundizan; empiece el hábito \textbf{hoy}.
+\end{frame}
+
+% --- 13 Demo ---
+\begin{frame}{Demo --- idea vaga vs.\ flujo con HITL}
+\textbf{Sin flujo:} ``Hazme el capítulo de termodinámica'' $\rightarrow$ texto largo, sin RA, citas dudosas.
+
+\textbf{Con flujo:}
+\begin{enumerate}
+\item Brief (audiencia, alcance, restricciones)
+\item Agente propone outline
+\item \textbf{Humano aprueba} nodos y notación
+\item Redacción por secciones cortas
+\item Verificación explícita (ecuaciones / citas)
+\end{enumerate}
+\end{frame}
+
+% --- 14 Anti-patrones ---
+\begin{frame}{Anti-patrones a evitar}
+\begin{itemize}
+\item Prompts eternos sin brief ni criterio de parada
+\item Cero restricciones (``sé creativo'' en material técnico)
+\item Aceptar la primera salida sin editar
+\item Inventar bibliografía ``para que se vea serio''
+\item Pegar datos de estudiantes o propiedad sensible en el chat
+\end{itemize}
+Si ocurre: pare, documente y rediseñe el punto HITL.
+\end{frame}
+
+% --- 15 Actividad ---
+\begin{frame}{Actividad de taller ($\sim$50 min)}
+\textbf{Entregable E1} (un solo archivo):
+\begin{enumerate}
+\item \textbf{Mapa} Usuario $\rightarrow$ Orquestador $\rightarrow$ Roles $\rightarrow$ Herramientas $\rightarrow$ Aprobación
+\item \textbf{Nota de integridad} (5--8 líneas): qué automatiza / qué verifica la persona
+\item \textbf{Tema EIC tentativo:} audiencia + alcance (una frase cada uno)
+\end{enumerate}
+Nombre sugerido: \texttt{Apellido\_Sesion1\_integridad-tema}
+\end{frame}
+
+% --- 16 Rúbrica ---
+\begin{frame}{Rúbrica rápida (E1)}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+Criterio & Bien & A mejorar \\
+\midrule
+Alineación EIC & Audiencia / notación / objetivos claros & Genérico, sin curso \\
+HITL & Decisiones y \texttt{[VERIFICAR]} visibles & Aceptación pasiva \\
+Reutilización & Sirve a más de una unidad & Solo ad hoc \\
+Integridad & Sin citas inventadas; límites claros & Omite verificación \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+% --- 17 Takeaways ---
+\begin{frame}{Takeaways de la sesión}
+\begin{enumerate}
+\item \textbf{Agente $\neq$ chat:} rol, límites, herramientas y parada
+\item \textbf{HITL es el estándar} en STEM académico
+\item \textbf{Integridad:} ecuaciones, unidades, citas y datos se verifican
+\item \textbf{Transparencia:} agent log desde el día 1
+\item El CADi son \textbf{40\,h}; las \textbf{16\,h} independientes cuentan
+\end{enumerate}
+\end{frame}
+
+% --- 18 TI ---
+\begin{frame}{Trabajo independiente ($\sim$1\,h) --- bloque A}
+Antes de la sesión 2:
+\begin{itemize}
+\item Lecturas / demos del \textbf{bloque A} ($\sim$1\,h; ver cronograma)
+\item Revisar plantillas en \texttt{tex/plantillas/}
+\item Traer bosquejo mental del \textbf{brief} de su tema EIC
+\end{itemize}
+Canal de dudas: \emph{(definir por edición)}.
+\end{frame}
+
+% --- 19 Prep sesión 2 ---
+\begin{frame}{Prep sesión 2 --- Briefs y orquestación}
+Próxima sesión (3\,h):
+\begin{itemize}
+\item Brief como contrato pedagógico
+\item Prompt de sistema reutilizable
+\item Orquestación multi-rol con puntos HITL
+\end{itemize}
+Traiga su \textbf{tema EIC} (aunque sea tentativo) y su nota de integridad.
+\end{frame}
+
+% --- 20 Cierre ---
+\begin{frame}{Gracias}
+\begin{center}
+{\Large Juliho Castillo}\\[0.5em]
+Escuela de Ingeniería y Ciencias\\[1em]
+CADi · IA agéntica para la creación de contenido académico\\[1.5em]
+{\small \emph{Verificar políticas de integridad y uso de IA con CEDDIE antes de cada edición.}}
+\end{center}
+\end{frame}
+
+\end{document}

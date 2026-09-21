@@ -1,0 +1,38 @@
+% preamble.tex — CADi IA agéntica (pdflatex-compatible)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{csquotes}
+\usepackage{parskip}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  urlcolor=blue!60!black,
+  citecolor=blue!50!black
+}
+
+\newcommand{\ceddie}{\emph{verificar con CEDDIE / política institucional vigente}}
+\newcommand{\clave}{\texttt{CADI-EIC-IA-AGENTICA-01}}
+\newcommand{\checkmarkitem}{\item[$\square$]}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small CADi EIC --- IA agéntica}
+\fancyhead[R]{\small \clave}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
