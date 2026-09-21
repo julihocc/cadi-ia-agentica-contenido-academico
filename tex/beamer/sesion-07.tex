@@ -1,0 +1,220 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{IA agéntica para la creación de contenido académico}
+\subtitle{Sesión 7 --- Artículos I: estructura, borrador asistido y citas}
+\author{Juliho Castillo}
+\institute{CADi 40\,h · Escuela de Ingeniería y Ciencias\\
+Tecnológico de Monterrey}
+\date{Clave sugerida: \texttt{CADI-EIC-IA-AGENTICA-01}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Agenda (3\,h) y producto E7}
+\begin{tabularx}{\textwidth}{@{}lclX@{}}
+\toprule
+Bloque & Tiempo & Contenido \\
+\midrule
+Marco artículo & 15 min & IMRyD, audiencia, contribución \\
+Demo borrador + citas & 25 min & No fabricar referencias \\
+Taller estructura/borrador & 85 min & Micro-sección o guía \\
+Lista de verificación & 25 min & Citas y datos \\
+Cierre & 20 min & Iniciar agent log; TI \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+\textbf{E7:} estructura + borrador con citas/datos a verificar; inicio de agent log.
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje (sesión)}
+Al finalizar, usted podrá:
+\begin{enumerate}
+\item Estructurar un \textbf{micro-artículo/sección} (p.\ ej.\ IMRyD) o guía breve
+\item Producir un \textbf{borrador asistido} con marcas \texttt{[VERIFICAR]}
+\item Elaborar una \textbf{lista de citas/datos} a verificar antes de uso público
+\item Iniciar el \textbf{agent log} del pipeline completo
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Marco: el microartefacto puede ser\ldots}
+\begin{itemize}
+\item Sección tipo IMRyD (o variante disciplinar)
+\item Guía de laboratorio breve
+\item Consolidación de libro/deck en prosa académica corta
+\end{itemize}
+\begin{block}{Alcance CADi}
+Priorice calidad de $\sim$800--1200 palabras (o guía equivalente), no un paper completo.
+\end{block}
+\end{frame}
+
+\begin{frame}{Estructuras académicas (IMRyD y variantes)}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Bloque & Pregunta que responde \\
+\midrule
+Introducción & ¿Qué problema y por qué importa? \\
+Método / enfoque & ¿Cómo se aborda? \\
+Resultados / desarrollo & ¿Qué se obtuvo o explica? \\
+Discusión / cierre & ¿Qué implica? ¿Límites? \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+Adapte a guías: objetivo, materiales, procedimiento, riesgos, cierre.
+\end{frame}
+
+\begin{frame}{Audiencia y contribución}
+Antes de redactar:
+\begin{itemize}
+\item ¿Quién lee? (estudiantes, pares, taller)
+\item ¿Qué aporta que no sea genérico?
+\item ¿Qué afirmaciones requieren evidencia?
+\item ¿Qué queda fuera del microartefacto?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Demo --- borrador + \texttt{[VERIFICAR]}}
+En vivo:
+\begin{enumerate}
+\item Generar párrafo con restricción ``no inventar citas''
+\item Detectar cita fantasma o DOI dudoso
+\item Marcar \texttt{[VERIFICAR]} o eliminar
+\item Humano corrige con fuente real o quita la afirmación
+\end{enumerate}
+\begin{alertblock}{Regla de oro}
+La IA propone; la persona verifica. \textbf{Nunca} se fabrican citas.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Citas: verificación humana obligatoria}
+\begin{itemize}
+\item Cada referencia debe existir y decir lo que se afirma
+\item Sin DOI/URL verificable $\rightarrow$ no citar o marcar pendiente
+\item Datos/tablas: fuente o \texttt{[VERIFICAR]}
+\item ``Se ve académico'' no es criterio de aceptación
+\end{itemize}
+\begin{block}{CEDDIE}
+Política de integridad / uso de IA: verificar por edición; no improvisar normativa.
+\end{block}
+\end{frame}
+
+\begin{frame}{Plantilla de lista de citas/datos}
+Para cada ítem:
+\begin{enumerate}
+\item Afirmación en el texto
+\item Cita/dato propuesto
+\item Estado: verificado / pendiente / eliminado
+\item Método: DOI, base de datos, libro, experta/o
+\item Responsable humano
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Inicio del agent log}
+Documente desde hoy (se cierra en sesión 8):
+\begin{itemize}
+\item Herramienta / modelo
+\item Rol del agente y brief/prompt
+\item Qué generó la IA
+\item Qué cambió o rechazó la persona
+\item Pendientes de verificación
+\end{itemize}
+\texttt{[VERIFICAR]} es hábito profesional, no debilidad.
+\end{frame}
+
+\begin{frame}{Roles en el pipeline de artículo}
+\begin{itemize}
+\item Planificador: estructura IMRyD / guía
+\item Redactor: borrador por bloques cortos
+\item Verificador de citas: lista de pendientes
+\item Humano: decide qué se publica
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Actividad de taller ($\sim$85 min + lista)}
+\textbf{Entregable E7:}
+\begin{enumerate}
+\item Estructura del micro-texto o guía
+\item Borrador asistido con \texttt{[VERIFICAR]} visibles
+\item Lista de citas/datos a verificar + método
+\item Agent log iniciado
+\end{enumerate}
+Nombre: \texttt{Apellido\_Sesion7\_borrador-citas} (+ log)
+\end{frame}
+
+\begin{frame}{Rúbrica rápida (E7)}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+Criterio & Bien & A mejorar \\
+\midrule
+Estructura & Bloques claros & Texto amorfo \\
+Integridad & Sin citas inventadas & Fantasmas \\
+HITL & Lista + \texttt{[VERIFICAR]} & Aceptación pasiva \\
+Log & Iniciado y usable & Ausente \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+\begin{frame}{Anti-patrones}
+\begin{itemize}
+\item Bibliografía inventada ``para que se vea serio''
+\item Pegar el borrador al LMS sin lista de verificación
+\item Agent log vacío (``ya lo haré al final'')
+\item Afirmaciones empíricas sin fuente ni marca
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Takeaways de la sesión}
+\begin{enumerate}
+\item Estructura primero; prosa después
+\item Citas: verificación humana obligatoria
+\item \texttt{[VERIFICAR]} es profesionalismo
+\item El agent log empieza hoy
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Trabajo independiente --- bloques C + D}
+Antes de la sesión 8:
+\begin{itemize}
+\item Completar borrador (C)
+\item Avanzar agent log (D)
+\item Lectura corta del bloque A si aplica
+\item Traer microartefacto casi cerrado para revisión
+\end{itemize}
+Parte de las \textbf{16\,h} independientes.
+\end{frame}
+
+\begin{frame}{Prep sesión 8 --- Artículos II y cierre}
+Última sesión en aula (3\,h):
+\begin{itemize}
+\item Agentes de revisión (claridad, rigor, sesgos)
+\item Cierre del microartefacto + checklist
+\item Showcase de aprendizajes
+\item Cierre del CADi
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gracias}
+\begin{center}
+{\Large Juliho Castillo}\\[0.5em]
+Escuela de Ingeniería y Ciencias\\[1em]
+CADi · IA agéntica para la creación de contenido académico\\[1.5em]
+{\small \emph{Verificar políticas de integridad y uso de IA con CEDDIE antes de cada edición.}}
+\end{center}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,226 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{IA agéntica para la creación de contenido académico}
+\subtitle{Sesión 4 --- Libros/ebooks II: secciones, ejercicios y consistencia}
+\author{Juliho Castillo}
+\institute{CADi 40\,h · Escuela de Ingeniería y Ciencias\\
+Tecnológico de Monterrey}
+\date{Clave sugerida: \texttt{CADI-EIC-IA-AGENTICA-01}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Agenda (3\,h) y producto E4}
+\begin{tabularx}{\textwidth}{@{}lclX@{}}
+\toprule
+Bloque & Tiempo & Contenido \\
+\midrule
+Recap outlines & 10 min & Priorizar secciones \\
+Demo sección & 25 min & Restricciones y regeneración \\
+Figuras y ejercicios & 20 min & Alineación a objetivos \\
+Taller secciones & 55 min & Generación + edición \\
+Consistencia & 35 min & Agente de estilo/glosario \\
+Cierre & 15 min & Diff v0$\rightarrow$v1; TI \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+\textbf{E4:} 1--2 secciones + artefacto didáctico + reporte de consistencia.
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje (sesión)}
+Al finalizar, usted podrá:
+\begin{enumerate}
+\item Generar de forma supervisada \textbf{1--2 secciones} coherentes en tono y nivel
+\item Producir al menos un \textbf{ejercicio o figura} alineado a objetivos
+\item Ejecutar un \textbf{pase de consistencia} (glosario, notación, unidades, estilo)
+\item Documentar un \textbf{diff narrado} v0$\rightarrow$v1 (qué cambió el humano)
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{De outline a sección corta}
+\begin{itemize}
+\item Elija 1--2 nodos prioritarios del E3
+\item Genere \textbf{por secciones cortas} (reduce alucinaciones)
+\item Edite humanamente; marque \texttt{[VERIFICAR]}
+\item No intente el capítulo completo en un solo prompt
+\end{itemize}
+\begin{block}{CEDDIE}
+No improvisar normativa de integridad / uso de IA --- verificar por edición.
+\end{block}
+\end{frame}
+
+\begin{frame}{Demo --- restricciones y el ``no'' humano}
+Modelo en vivo:
+\begin{enumerate}
+\item Prompt con brief + nodo + notación + nivel
+\item Primera salida: detectar relleno o fórmula dudosa
+\item Humano dice \textbf{no}: regenerar o editar
+\item Conservar v0 y anotar decisión
+\end{enumerate}
+\begin{alertblock}{Mensaje clave}
+Generar por secciones cortas $>$ un muro de texto.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Figuras, tablas y ejercicios STEM}
+\begin{itemize}
+\item Nacen de \textbf{objetivos / RA}, no de relleno
+\item Cada ejercicio: enunciado + solución o rúbrica breve
+\item Figuras: propósito didáctico + leyenda + fuentes si aplica
+\item Tablas: unidades visibles; sin datos inventados
+\end{itemize}
+Si no hay fuente: \texttt{[VERIFICAR]} o no incluir.
+\end{frame}
+
+\begin{frame}{Agente de consistencia: qué sí / qué no}
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+\toprule
+\textbf{Sí (útil)} & \textbf{No (límites)} \\
+\midrule
+Términos vs.\ glosario & Sustituir revisión disciplinar \\
+Notación / unidades & Validar teoremas nuevos \\
+Estilo y tono & Fabricar citas ``faltantes'' \\
+Duplicados / contradicciones & Decidir pedagogía del curso \\
+\bottomrule
+\end{tabularx}
+\vspace{0.8em}
+El agente amplifica; el humano certifica.
+\end{frame}
+
+\begin{frame}{Plantilla de reporte de consistencia}
+Cinco a ocho líneas:
+\begin{itemize}
+\item Hallazgos (alto / medio / bajo)
+\item Correcciones aplicadas
+\item Pendientes \texttt{[VERIFICAR]}
+\item Cambios de notación o glosario
+\item Qué rechazó el humano
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Diff narrado v0$\rightarrow$v1}
+Documente:
+\begin{enumerate}
+\item Qué generó la IA (v0)
+\item Qué cambió / cortó / reordenó la persona
+\item Por qué (rigor, nivel, tono, integridad)
+\item Qué queda abierto
+\end{enumerate}
+Hábito que se cierra en el agent log (sesiones 7--8).
+\end{frame}
+
+\begin{frame}{Integridad STEM en secciones}
+Checklist rápido:
+\begin{itemize}
+\item[$\square$] Ecuaciones y símbolos coherentes con el mapa
+\item[$\square$] Unidades sin mezclar sistemas
+\item[$\square$] Ninguna cita inventada
+\item[$\square$] Afirmaciones empíricas con fuente o \texttt{[VERIFICAR]}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Actividad de taller}
+\textbf{Entregable E4:}
+\begin{enumerate}
+\item \textbf{Parte A --- Secciones} (30 min): 1--2 nodos; editar; marcar \texttt{[VERIFICAR]}
+\item \textbf{Parte B --- Ejercicio/figura} (15 min): alineado a un RA
+\item \textbf{Parte C --- Consistencia} (15 min): pase + 5--8 líneas de hallazgos
+\end{enumerate}
+Nombre: \texttt{Apellido\_Sesion4\_secciones-consistencia}
+\end{frame}
+
+\begin{frame}{Rúbrica rápida (E4)}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+Criterio & Bien & A mejorar \\
+\midrule
+Alineación EIC & Nivel y notación claros & Genérico \\
+HITL & Diff / \texttt{[VERIFICAR]} visibles & Aceptación pasiva \\
+Artefacto & Ejercicio/figura con RA & Relleno decorativo \\
+Consistencia & Reporte concreto & ``Se ve bien'' \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+\begin{frame}{Anti-patrones}
+\begin{itemize}
+\item Generar el capítulo entero de un golpe
+\item Figuras sin propósito didáctico
+\item Agente de consistencia como ``aprobación automática''
+\item Borrar v0 sin documentar el diff
+\item Inventar bibliografía para ``rellenar''
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Workshop cue --- calidad $>$ volumen}
+\begin{itemize}
+\item Quien termine la primera sección: segundo ejercicio + tabla
+\item Circulación: notación, tono, \texttt{[VERIFICAR]}
+\item Si la herramienta falla: continuar en documento colaborativo
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Puente al bloque de presentaciones}
+\begin{itemize}
+\item Hoy cerramos prosa de libro/ebook
+\item Sesiones 5--6: narrativa, deck y accesibilidad
+\item Su sección E4 puede alimentar el storyboard
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Takeaways de la sesión}
+\begin{enumerate}
+\item Secciones cortas + edición humana
+\item Artefactos nacen de RA, no de relleno
+\item Consistencia $\neq$ revisión disciplinar completa
+\item Diff narrado = transparencia del proceso
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Trabajo independiente}
+Antes de la sesión 5:
+\begin{itemize}
+\item Pulir sección (bloque C)
+\item Practicar plantillas (bloque B)
+\item Traer idea de \textbf{unidad o conferencia} a narrar
+\end{itemize}
+Parte de las \textbf{16\,h} independientes del diseño CADi.
+\end{frame}
+
+\begin{frame}{Prep sesión 5 --- Presentaciones I}
+Próxima sesión (3\,h):
+\begin{itemize}
+\item De objetivos a mensajes clave y arco narrativo
+\item Storyboard 8--12 nodos
+\item Anticipar malentendidos STEM
+\end{itemize}
+Traiga E4 (o la sección pulida) como materia prima.
+\end{frame}
+
+\begin{frame}{Gracias}
+\begin{center}
+{\Large Juliho Castillo}\\[0.5em]
+Escuela de Ingeniería y Ciencias\\[1em]
+CADi · IA agéntica para la creación de contenido académico\\[1.5em]
+{\small \emph{Verificar políticas de integridad y uso de IA con CEDDIE antes de cada edición.}}
+\end{center}
+\end{frame}
+
+\end{document}

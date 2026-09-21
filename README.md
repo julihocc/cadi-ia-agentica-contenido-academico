@@ -16,13 +16,16 @@ make
 # o:
 latexmk -pdf -outdir=build tex/main.tex
 
-# Beamer sesión 1
-make beamer01
+# Todos los Beamer (sesiones 1–8)
+make beamer
+
+# Un Beamer puntual
+make beamer01   # … beamer08
 # o:
-latexmk -pdf -outdir=build tex/beamer/sesion-01.tex
+latexmk -pdf -outdir=build tex/beamer/sesion-0N.tex
 ```
 
-PDF esperados: `build/main.pdf`, `build/sesion-01.pdf`.
+PDF esperados: `build/main.pdf`, `build/sesion-01.pdf` … `build/sesion-08.pdf`.
 
 La ficha de autorización también es compilable sola:
 
@@ -41,11 +44,11 @@ cd tex/docs && pdflatex ficha-autorizacion-lider-eic.tex
 | `tex/recursos/` | herramientas, lecturas |
 | `tex/ejemplos/` | introducción (placeholders) |
 | `tex/sesiones/01-…`–`08-…` | `sesion.tex`, `guia-facilitador.tex`, `actividad.tex`, `diapositivas-outline.tex` |
-| `tex/beamer/sesion-01.tex` | **Deck Beamer completo** sesión 1 (~20 frames) |
+| `tex/beamer/sesion-01.tex`–`sesion-08.tex` | **Decks Beamer completos** (~18–22 frames c/u) |
 
 ## Enlaces rápidos
 
 - Ficha una página: [`tex/docs/ficha-autorizacion-lider-eic.tex`](tex/docs/ficha-autorizacion-lider-eic.tex)
-- Beamer sesión 1: [`tex/beamer/sesion-01.tex`](tex/beamer/sesion-01.tex)
+- Beamer sesiones 1–8: [`tex/beamer/`](tex/beamer/)
 
 Políticas institucionales: **verificar con CEDDIE / política institucional vigente** antes de cada edición.

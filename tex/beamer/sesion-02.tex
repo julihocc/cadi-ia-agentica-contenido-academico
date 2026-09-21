@@ -1,0 +1,269 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{IA agéntica para la creación de contenido académico}
+\subtitle{Sesión 2 --- Briefs, prompts de sistema y orquestación}
+\author{Juliho Castillo}
+\institute{CADi 40\,h · Escuela de Ingeniería y Ciencias\\
+Tecnológico de Monterrey}
+\date{Clave sugerida: \texttt{CADI-EIC-IA-AGENTICA-01}}
+
+\begin{document}
+
+% --- 1 Portada ---
+\begin{frame}
+\titlepage
+\end{frame}
+
+% --- 2 Agenda ---
+\begin{frame}{Agenda (3\,h) y producto E2}
+\begin{tabularx}{\textwidth}{@{}lclX@{}}
+\toprule
+Bloque & Tiempo & Contenido \\
+\midrule
+Recap & 10 min & Integridad y temas E1 \\
+Brief & 30 min & Contrato pedagógico \\
+Prompt y multi-rol & 25 min & Anatomía y roles \\
+Demo orquestación & 25 min & HITL y criterio de parada \\
+Taller & 50 min & Brief + prompt + diagrama \\
+Cierre & 20 min & Puesta en común; TI \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+\textbf{E2:} brief + prompt de sistema v0 + diagrama de orquestación.
+\end{frame}
+
+% --- 3 RA ---
+\begin{frame}{Resultados de aprendizaje (sesión)}
+Al finalizar, usted podrá:
+\begin{enumerate}
+\item Completar un \textbf{brief} de contenido específico para material EIC
+\item Diseñar un \textbf{prompt de sistema} (rol, restricciones, formato, parada)
+\item Proponer \textbf{orquestación} de 2--4 roles con aprobaciones humanas
+\item Incluir instrucciones de \textbf{no fabricar citas} y señalar incertidumbre
+\end{enumerate}
+\end{frame}
+
+% --- 4 Puente E1 ---
+\begin{frame}{Puente desde E1}
+\begin{itemize}
+\item Trajo: mapa + nota de integridad + tema EIC tentativo
+\item Hoy: convertir esa intención en \textbf{contrato} (brief) y \textbf{máquina} (prompt + flujo)
+\item El brief alimenta al planificador/redactor; el diagrama fija los HITL
+\end{itemize}
+\begin{block}{Recordatorio}
+Política de integridad / uso de IA $\rightarrow$ verificar con \textbf{CEDDIE} \emph{(enlace y vigencia por edición)}.
+\end{block}
+\end{frame}
+
+% --- 5 Brief contrato ---
+\begin{frame}{El brief como contrato pedagógico}
+\begin{itemize}
+\item Contrato entre \textbf{docente} y \textbf{sistema} (no un ``prompt largo'')
+\item Fija audiencia, alcance, tono, restricciones y criterios de éxito
+\item Reduce ``ruido elegante'' y regeneraciones inútiles
+\item Marque explícitamente: ``El humano decide siempre sobre X''
+\end{itemize}
+\begin{alertblock}{Mensaje clave}
+Sin brief sólido, la orquestación solo multiplica el caos.
+\end{alertblock}
+\end{frame}
+
+% --- 6 Campos brief ---
+\begin{frame}{Campos mínimos de un buen brief EIC}
+\begin{enumerate}
+\item Identificación (artefacto, curso, idioma)
+\item Audiencia y conocimientos previos
+\item Objetivos / propósito (verbo + contenido)
+\item Alcance: incluye / excluye / extensión
+\item Tono y estilo; notación preferida
+\item Restricciones para el agente + criterios de éxito
+\end{enumerate}
+Plantilla: \texttt{tex/plantillas/brief-contenido.tex}
+\end{frame}
+
+% --- 7 Prompt anatomía ---
+\begin{frame}{Anatomía del prompt de sistema}
+\begin{itemize}
+\item \textbf{Rol:} planificador, redactor, revisor, verificador\ldots
+\item \textbf{Misión:} qué producir y para quién
+\item \textbf{Reglas duras:} no inventar citas/datos; \texttt{[VERIFICAR]}
+\item \textbf{Formato de salida:} español (México); supuestos; pendientes
+\item \textbf{Criterio de parada:} cuándo devolver control al humano
+\end{itemize}
+Plantilla: \texttt{tex/plantillas/prompt-sistema-agente.tex}
+\end{frame}
+
+% --- 8 Restricciones STEM ---
+\begin{frame}{Restricciones STEM (obligatorias)}
+Incorpore en el prompt:
+\begin{itemize}
+\item No fabricar citas, DOI, estadísticas ni URLs
+\item Señalar incertidumbre con \texttt{[VERIFICAR: \ldots]}
+\item Respetar notación, unidades y glosario del curso
+\item No solicitar ni pegar datos personales sensibles
+\item Distinguir hecho, interpretación y opinión
+\end{itemize}
+\begin{alertblock}{STEM académico}
+Estas reglas son el mínimo; no son ``opcionales''.
+\end{alertblock}
+\end{frame}
+
+% --- 9 Patrones orquestación ---
+\begin{frame}{Patrones de orquestación}
+\begin{itemize}
+\item \textbf{Secuencial:} plan $\rightarrow$ borrador $\rightarrow$ revisión
+\item \textbf{Crítico-humano:} el humano es un nodo obligatorio
+\item \textbf{Paralelo ligero:} dos roles $\rightarrow$ fusión supervisada
+\end{itemize}
+\begin{center}
+\texttt{Usuario $\rightarrow$ Orquestador $\rightarrow$ Roles $\rightarrow$ Herramientas $\rightarrow$ Humano}
+\end{center}
+Orquestación $>$ prompt único para obras largas o multi-artefacto.
+\end{frame}
+
+% --- 10 Mapa roles ---
+\begin{frame}{Mapa de roles académicos (2--4)}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Rol & Entrega típica \\
+\midrule
+Planificador & Outline / arquitectura alineada a RA \\
+Redactor & Sección o bloque con restricciones \\
+Revisor & Hallazgos priorizados (no reescritura ciega) \\
+Verificador & Notación, unidades, citas, consistencia \\
+\bottomrule
+\end{tabularx}
+\vspace{0.8em}
+Empiece con 2--3 roles; agregue verificador cuando haya STEM denso.
+\end{frame}
+
+% --- 11 Parada y handoff ---
+\begin{frame}{Criterio de parada y handoff}
+El agente se detiene y pide humano cuando:
+\begin{itemize}
+\item Completó el encargo del brief
+\item Necesita una decisión pedagógica o disciplinar
+\item Detecta riesgo de fabricar información
+\item Hay ambigüedad: ofrece 2 opciones etiquetadas
+\end{itemize}
+\begin{block}{Handoff limpio}
+Salida estructurada + supuestos + pendientes de verificación.
+\end{block}
+\end{frame}
+
+% --- 12 Demo ---
+\begin{frame}{Demo --- orquestación con HITL visible}
+Flujo en vivo (ejemplo STEM neutro EIC):
+\begin{enumerate}
+\item Brief corto $\rightarrow$ planificador propone outline
+\item \textbf{HITL\,1:} humano aprueba / corta nodos
+\item Redactor produce un bloque con restricciones
+\item \textbf{HITL\,2:} humano marca \texttt{[VERIFICAR]} y edita
+\end{enumerate}
+Observe: restricciones + parada + decisiones documentadas.
+\end{frame}
+
+% --- 13 Anti-patrones ---
+\begin{frame}{Anti-patrones de brief y orquestación}
+\begin{itemize}
+\item Brief genérico (``haz un capítulo bueno'')
+\item Un solo mega-prompt sin roles ni parada
+\item Cero restricciones STEM
+\item Aceptar la primera salida multi-rol sin fusión humana
+\item Olvidar el diagrama: nadie sabe dónde está el HITL
+\end{itemize}
+\end{frame}
+
+% --- 14 Actividad ---
+\begin{frame}{Actividad de taller ($\sim$50 min)}
+\textbf{Entregable E2} (un solo archivo):
+\begin{enumerate}
+\item \textbf{Parte A --- Brief} (20 min): campos mínimos + ``humano decide X''
+\item \textbf{Parte B --- Prompt} (15 min): rol, misión, reglas, formato, parada
+\item \textbf{Parte C --- Orquestación} (15 min): 2--4 roles, flujo, $\geq$2 HITL
+\end{enumerate}
+Nombre sugerido: \texttt{Apellido\_Sesion2\_brief-prompt-orquestacion}
+\end{frame}
+
+% --- 15 Plantillas ---
+\begin{frame}{Plantillas a usar hoy}
+\begin{itemize}
+\item \texttt{tex/plantillas/brief-contenido.tex}
+\item \texttt{tex/plantillas/prompt-sistema-agente.tex}
+\item Su mapa E1 como base del diagrama
+\end{itemize}
+\begin{block}{Prioridad del taller}
+Calidad del brief y del diagrama $>$ volumen de texto generado.
+\end{block}
+\end{frame}
+
+% --- 16 Rúbrica ---
+\begin{frame}{Rúbrica rápida (E2)}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+Criterio & Bien & A mejorar \\
+\midrule
+Alineación EIC & Audiencia / notación / objetivos & Genérico \\
+HITL & $\geq$2 puntos y \texttt{[VERIFICAR]} & Aceptación pasiva \\
+Reutilización & Sirve a más de una unidad & Solo ad hoc \\
+Integridad & No-citas + parada explícita & Omite restricciones \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+% --- 17 Takeaways ---
+\begin{frame}{Takeaways de la sesión}
+\begin{enumerate}
+\item \textbf{El brief es el contrato} entre docente y sistema
+\item \textbf{Orquestación $>$ prompt único} en obras largas
+\item \textbf{Criterio de parada} deja claro cuándo entra el humano
+\item Restricciones STEM reducen alucinaciones ``elegantes''
+\end{enumerate}
+\end{frame}
+
+% --- 18 TI ---
+\begin{frame}{Trabajo independiente --- bloque B}
+Antes de la sesión 3 ($\sim$parte del presupuesto de 16\,h):
+\begin{itemize}
+\item Practicar plantillas de brief y prompt de sistema
+\item Refinar E2 con su tema EIC real
+\item Traer idea de \textbf{arquitectura de obra} (capítulos / unidades)
+\end{itemize}
+Canal de dudas: \emph{(definir por edición)}.
+\end{frame}
+
+% --- 19 Prep sesión 3 ---
+\begin{frame}{Prep sesión 3 --- Libros/ebooks I}
+Próxima sesión (3\,h):
+\begin{itemize}
+\item Arquitectura pedagógica de una obra técnica
+\item Outline 6--10 nodos alineado a RA
+\item Mapa preliminar de notación / glosario
+\end{itemize}
+Traiga brief + diagramas E2 y su tema EIC.
+\end{frame}
+
+% --- 20 Cierre ---
+\begin{frame}{Gracias}
+\begin{center}
+{\Large Juliho Castillo}\\[0.5em]
+Escuela de Ingeniería y Ciencias\\[1em]
+CADi · IA agéntica para la creación de contenido académico\\[1.5em]
+{\small \emph{Verificar políticas de integridad y uso de IA con CEDDIE antes de cada edición.}}
+\end{center}
+\end{frame}
+
+\end{document}

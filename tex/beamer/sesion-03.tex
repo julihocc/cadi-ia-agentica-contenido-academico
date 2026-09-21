@@ -1,0 +1,226 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{IA agéntica para la creación de contenido académico}
+\subtitle{Sesión 3 --- Libros/ebooks I: arquitectura y outline}
+\author{Juliho Castillo}
+\institute{CADi 40\,h · Escuela de Ingeniería y Ciencias\\
+Tecnológico de Monterrey}
+\date{Clave sugerida: \texttt{CADI-EIC-IA-AGENTICA-01}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Agenda (3\,h) y producto E3}
+\begin{tabularx}{\textwidth}{@{}lclX@{}}
+\toprule
+Bloque & Tiempo & Contenido \\
+\midrule
+Recap & 10 min & Brief/orquestación $\rightarrow$ estructura \\
+Arquitectura STEM & 30 min & Capítulos, RA, notación, ejercicios \\
+Demo outline & 20 min & Brief $\rightarrow$ outline con restricciones \\
+Taller & 70 min & Arquitectura + outline + símbolos \\
+Pares & 25 min & Coherencia pedagógica \\
+Cierre & 15 min & TI avance microartefacto \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+\textbf{E3:} arquitectura de obra + outline documentado con RA.
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje (sesión)}
+Al finalizar, usted podrá:
+\begin{enumerate}
+\item Traducir un brief en \textbf{arquitectura} (capítulos, RA, artefactos)
+\item Producir un \textbf{outline} de 6--10 nodos con RA en nodos clave
+\item Bosquejar un \textbf{mapa de notación/glosario} STEM
+\item Justificar el \textbf{alcance} (qué queda fuera) de un microartefacto viable
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Del brief a la obra}
+\begin{center}
+\texttt{Brief $\rightarrow$ Arquitectura $\rightarrow$ Outline $\rightarrow$ Secciones (ses.\ 4)}
+\end{center}
+\begin{itemize}
+\item El brief fija audiencia y restricciones
+\item La arquitectura decide capítulos, artefactos y exclusiones
+\item El outline es el \textbf{contrato pedagógico}, no un índice decorativo
+\end{itemize}
+\begin{block}{Integridad}
+Política de uso de IA $\rightarrow$ verificar con \textbf{CEDDIE} \emph{(por edición)}.
+\end{block}
+\end{frame}
+
+\begin{frame}{Arquitectura de obra académica STEM}
+Plantilla mental:
+\begin{enumerate}
+\item Objetivo y públicos EIC
+\item Capítulos / unidades
+\item Secciones y artefactos (texto, ejercicios, figuras)
+\item Evaluaciones / autoevaluación
+\item Glosario y notación
+\item \textbf{Qué queda fuera} del microartefacto
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Learning outcomes y verbos de Bloom}
+\begin{itemize}
+\item Asigne RA (verbo + contenido + condición) a nodos clave
+\item Prefiera verbos observables: explicar, calcular, diseñar, contrastar\ldots
+\item Menos nodos bien alineados $>$ muchos nodos genéricos
+\item Cada nodo debe servir a un mensaje o habilidad del curso
+\end{itemize}
+\begin{alertblock}{Evite}
+``Introducción a\ldots'' sin verbo de aprendizaje.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Notación, unidades y glosario}
+Antes de redactar secciones:
+\begin{itemize}
+\item Liste símbolos estables (y sinónimos prohibidos)
+\item Fije unidades (SI o las del programa)
+\item Defina términos que el agente no debe ``creativizar''
+\item Marque qué revisará el agente de consistencia (sesión 4)
+\end{itemize}
+El mapa de notación ahorra dolor mañana.
+\end{frame}
+
+\begin{frame}{Alcance viable del microartefacto}
+\begin{itemize}
+\item CADi = microartefacto, no el libro completo
+\item Elija 1 capítulo o 1--2 secciones profundas
+\item Declare exclusiones: anexos, benchmarks, datos no verificados
+\item Extensión objetivo: páginas / palabras / \# ejercicios
+\end{itemize}
+\begin{block}{Diseño 40\,h}
+Las 16\,h independientes avanzan el outline hacia la primera sección.
+\end{block}
+\end{frame}
+
+\begin{frame}{Demo --- brief $\rightarrow$ outline}
+En vivo (STEM neutro EIC):
+\begin{enumerate}
+\item Partir del brief (nivel + restricciones)
+\item Generar outline 6--10 nodos
+\item Rechazar nodos vagos o fuera de alcance
+\item \textbf{HITL:} humano aprueba RA y notación
+\end{enumerate}
+Observe la diferencia entre índice decorativo y contrato pedagógico.
+\end{frame}
+
+\begin{frame}{Ejemplo: outline de 8 nodos}
+\begin{enumerate}
+\item Gancho / motivación del tema
+\item Prerrequisitos y notación
+\item Concepto central (RA: explicar)
+\item Ejemplo guiado
+\item Variante / caso EIC
+\item Ejercicio alineado (RA: aplicar)
+\item Errores frecuentes
+\item Cierre y puente a la siguiente unidad
+\end{enumerate}
+Adapte; no copie ciegamente.
+\end{frame}
+
+\begin{frame}{Roles útiles hoy}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Rol & Pregunta \\
+\midrule
+Planificador & ¿Qué nodos y en qué orden? \\
+Pedagogo & ¿Qué RA y verbos? \\
+Verificador (preview) & ¿Notación coherente? \\
+Humano & ¿Qué queda fuera? \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+\begin{frame}{Actividad de taller ($\sim$70 min)}
+\textbf{Entregable E3:}
+\begin{enumerate}
+\item \textbf{Parte A --- Arquitectura} (25 min): objetivo, público, capítulos, exclusiones
+\item \textbf{Parte B --- Outline} (30 min): 6--10 nodos + RA en nodos clave + edición humana
+\item \textbf{Parte C --- Mapa de notación} (15 min): símbolos / unidades / términos
+\end{enumerate}
+Nombre: \texttt{Apellido\_Sesion3\_arquitectura-outline}
+\end{frame}
+
+\begin{frame}{Rúbrica de coherencia pedagógica}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+Criterio & Bien & A mejorar \\
+\midrule
+Alineación EIC & Audiencia y RA explícitos & Genérico \\
+HITL & Nodos editados / \texttt{[VERIFICAR]} & Aceptación pasiva \\
+Alcance & Exclusiones claras & Obra infinita \\
+Notación & Mapa preliminar & Sin glosario \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+\begin{frame}{Revisión por pares ($\sim$25 min)}
+Preguntas guía:
+\begin{itemize}
+\item ¿Cada nodo clave tiene RA observable?
+\item ¿Hay nodos que sobran o faltan?
+\item ¿La notación está lista para consistencia (ses.\ 4)?
+\item ¿El alcance es viable en el tiempo del CADi?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Takeaways de la sesión}
+\begin{enumerate}
+\item Outline = \textbf{contrato pedagógico}, no índice decorativo
+\item Menos nodos alineados $>$ muchos genéricos
+\item Mapa de notación = inversión para la sesión 4
+\item Alcance explícito hace viable el microartefacto
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Trabajo independiente --- bloque C}
+Antes de la sesión 4:
+\begin{itemize}
+\item Avanzar el outline hacia la \textbf{primera sección} borrador
+\item Refinar mapa de símbolos
+\item Traer 1--2 nodos priorizados para generar en aula
+\end{itemize}
+Parte del presupuesto de \textbf{16\,h} independientes del CADi.
+\end{frame}
+
+\begin{frame}{Prep sesión 4 --- Libros/ebooks II}
+Próxima sesión (3\,h):
+\begin{itemize}
+\item Generación supervisada de secciones cortas
+\item Ejercicios / figuras alineados a RA
+\item Agente de consistencia + diff narrado v0$\rightarrow$v1
+\end{itemize}
+Traiga E3 y los nodos que expandirá.
+\end{frame}
+
+\begin{frame}{Gracias}
+\begin{center}
+{\Large Juliho Castillo}\\[0.5em]
+Escuela de Ingeniería y Ciencias\\[1em]
+CADi · IA agéntica para la creación de contenido académico\\[1.5em]
+{\small \emph{Verificar políticas de integridad y uso de IA con CEDDIE antes de cada edición.}}
+\end{center}
+\end{frame}
+
+\end{document}

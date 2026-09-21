@@ -1,0 +1,218 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{IA agéntica para la creación de contenido académico}
+\subtitle{Sesión 8 --- Artículos II: revisión agéntica, cierre y showcase}
+\author{Juliho Castillo}
+\institute{CADi 40\,h · Escuela de Ingeniería y Ciencias\\
+Tecnológico de Monterrey}
+\date{Clave sugerida: \texttt{CADI-EIC-IA-AGENTICA-01}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Agenda (3\,h) y producto E8}
+\begin{tabularx}{\textwidth}{@{}lclX@{}}
+\toprule
+Bloque & Tiempo & Contenido \\
+\midrule
+Agentes de revisión & 15 min & Claridad, rigor, sesgos \\
+Demo tres pases + HITL & 25 min & Diff v0$\rightarrow$v1 \\
+Laboratorio de cierre & 70 min & Integrar pipeline 1--7 \\
+Log + checklist & 25 min & Documentación de acreditación \\
+Showcase & 25 min & Galería 3--5 muestras \\
+Cierre CADi & 10 min & Evaluación y siguientes pasos \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+\textbf{E8:} microartefacto + agent log + checklist de calidad (acreditación).
+\end{frame}
+
+\begin{frame}{Resultados de aprendizaje (sesión)}
+Al finalizar, usted podrá:
+\begin{enumerate}
+\item Aplicar \textbf{agentes de revisión} (claridad, rigor, sesgos, alineación)
+\item Cerrar el \textbf{microartefacto} EIC con edición humana final
+\item Completar \textbf{agent log} y checklist de calidad
+\item Comunicar \textbf{aprendizajes transferibles} en un showcase breve
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Mapa del CADi --- cierre}
+\begin{itemize}
+\item 8 sesiones $\times$ 3\,h = 24\,h en aula
+\item 16\,h independientes (bloques A--D)
+\item Hoy: integrar pipeline + acreditar proceso y producto
+\end{itemize}
+\begin{block}{CEDDIE}
+Evaluación institucional / políticas: seguir indicaciones vigentes de \textbf{CEDDIE} por edición.
+\end{block}
+\end{frame}
+
+\begin{frame}{Agentes de revisión: mapa de pases}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Pase & Busca \\
+\midrule
+Claridad & Mensajes, estructura, densidad \\
+Rigor & Afirmaciones, unidades, lógica STEM \\
+Sesgos / tono & Inclusión, nivel, generalizaciones \\
+Alineación & Brief, RA, audiencia EIC \\
+\bottomrule
+\end{tabularx}
+\vspace{0.5em}
+Ejecute $\geq$2 pases; conserve salidas y decisiones.
+\end{frame}
+
+\begin{frame}{Demo --- tres pases + decisiones humanas}
+Modelo en texto corto:
+\begin{enumerate}
+\item Pase claridad $\rightarrow$ aceptar / rechazar sugerencias
+\item Pase rigor $\rightarrow$ marcar o corregir
+\item Pase sesgo/tono $\rightarrow$ ajustar lenguaje
+\item Diff narrado v0$\rightarrow$v1
+\end{enumerate}
+\begin{alertblock}{Mensaje clave}
+La revisión agéntica \textbf{amplifica} criterio humano; no lo reemplaza.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{Diff narrado v0$\rightarrow$v1 (cierre)}
+Incluya en el paquete:
+\begin{itemize}
+\item Qué cambió tras los pases
+\item Qué rechazó (y por qué)
+\item Pendientes \texttt{[VERIFICAR]} resueltos o abiertos
+\item Declaración de uso de IA (borrador)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Checklist de calidad (recorrido)}
+Plantilla \texttt{tex/plantillas/checklist-calidad.tex}:
+\begin{itemize}
+\item A. Alineación pedagógica
+\item B. Claridad y estructura
+\item C. Rigor y fuentes
+\item D. Integridad y transparencia (agent log)
+\item E. Accesibilidad e inclusión (básico)
+\item F. Listo para compartir
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Paquete de acreditación E8}
+Carpeta sugerida: \texttt{Apellido\_CADI\_EIC\_microartefacto/}
+\begin{enumerate}
+\item Microartefacto final (PDF o enlace)
+\item Agent log extremo a extremo
+\item Checklist de calidad completada
+\item Reflexión breve de transferencia (opcional recomendada)
+\end{enumerate}
+Proceso + producto, no solo el PDF final.
+\end{frame}
+
+\begin{frame}{Laboratorio de cierre ($\sim$70 min)}
+Timeboxing sugerido:
+\begin{itemize}
+\item 50 min: integrar lo mejor de sesiones 1--7; cerrar \texttt{[VERIFICAR]}
+\item 20 min: agent log + checklist
+\end{itemize}
+\begin{block}{Prioridad}
+Calidad usable en clase $>$ volumen nuevo.
+\end{block}
+\end{frame}
+
+\begin{frame}{Instrucciones del laboratorio}
+\begin{enumerate}
+\item \textbf{Parte A --- Revisión} (25 min): $\geq$2 pases; anote aceptado/rechazado
+\item \textbf{Parte B --- Cierre} (30 min): edición humana final del microartefacto
+\item \textbf{Parte C --- Log + checklist} (15 min): documentar y dictaminar
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Showcase --- protocolo (2--3 min)}
+3--5 voluntarios; el resto escucha un aprendizaje:
+\begin{itemize}
+\item Contexto EIC (30 s)
+\item Qué automatizó / qué decidió la persona (60 s)
+\item Un transferible a su práctica (30--60 s)
+\end{itemize}
+Celebre transferencia, no perfección cosmética.
+\end{frame}
+
+\begin{frame}{Rúbrica rápida (E8 / acreditación)}
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+Criterio & Bien & A mejorar \\
+\midrule
+Alineación EIC & Audiencia y RA claros & Genérico \\
+HITL & Decisiones documentadas & Aceptación pasiva \\
+Integridad & Sin citas inventadas & Pendientes ocultos \\
+Paquete & Log + checklist + artefacto & Solo PDF \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+
+\begin{frame}{Integridad STEM en el cierre}
+Antes de dictaminar ``listo'':
+\begin{itemize}
+\item[$\square$] Ecuaciones, unidades y glosario revisados
+\item[$\square$] Citas existentes; sin fantasmas
+\item[$\square$] Datos sensibles fuera de prompts
+\item[$\square$] Declaración de uso de IA preparada
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Takeaways del CADi}
+\begin{enumerate}
+\item Agente = rol + límites + herramientas + parada
+\item Brief y orquestación antes de generar a granel
+\item HITL es estándar en STEM académico
+\item Transparencia: agent log + declaración de uso de IA
+\item Verificar políticas con \textbf{CEDDIE} en cada edición
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Trabajo independiente residual}
+Si falta del presupuesto de 16\,h:
+\begin{itemize}
+\item Completar TI bloque D ($\sim$1{,}5\,h reflexión/checklist)
+\item Cerrar pendientes \texttt{[VERIFICAR]} antes de uso en clase
+\end{itemize}
+Fin del CADi en aula; el aprendizaje continúa en su práctica EIC.
+\end{frame}
+
+\begin{frame}{Evaluación del CADi}
+\begin{itemize}
+\item Seguir el canal y encuesta institucional de la edición
+\item Comentarios de mejora del taller: anotar para el equipo docente
+\item Dudas de política: derivar a \textbf{CEDDIE}; no improvisar normativa
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cierre del CADi --- gracias}
+\begin{center}
+{\Large Juliho Castillo}\\[0.5em]
+Escuela de Ingeniería y Ciencias\\[1em]
+CADi · IA agéntica para la creación de contenido académico\\[1em]
+{\large Microartefacto + proceso documentado = acreditación}\\[1.5em]
+{\small \emph{Verificar políticas de integridad y uso de IA con CEDDIE antes de cada edición.}}
+\end{center}
+\end{frame}
+
+\end{document}
