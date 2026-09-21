@@ -6,16 +6,23 @@ Licencia: [MIT](LICENSE)
 
 > **Todo el contenido del curso está en LaTeX** bajo `tex/`. Este README es solo un puntero de compilación y mapa del árbol.
 
-## PDFs listos (líder / sesión 1)
+## PDFs listos
 
 Descargas compiladas en [`pdf/`](pdf/):
 
 | Archivo | Uso |
 |---------|-----|
 | [`pdf/ficha-autorizacion-lider-eic.pdf`](pdf/ficha-autorizacion-lider-eic.pdf) | Ficha de autorización **lista para líder EIC** (instructor, correo CCM, campus) |
-| [`pdf/sesion-01-beamer.pdf`](pdf/sesion-01-beamer.pdf) | Deck Beamer de la **sesión 1** (fundamentos agénticos e integridad) |
+| [`pdf/sesion-01-beamer.pdf`](pdf/sesion-01-beamer.pdf) | Beamer **sesión 1** — Fundamentos agénticos e integridad (EIC) |
+| [`pdf/sesion-02-beamer.pdf`](pdf/sesion-02-beamer.pdf) | Beamer **sesión 2** — Briefs, prompts de sistema y orquestación |
+| [`pdf/sesion-03-beamer.pdf`](pdf/sesion-03-beamer.pdf) | Beamer **sesión 3** — Libros/ebooks I: arquitectura y outline |
+| [`pdf/sesion-04-beamer.pdf`](pdf/sesion-04-beamer.pdf) | Beamer **sesión 4** — Libros/ebooks II: secciones, ejercicios y consistencia |
+| [`pdf/sesion-05-beamer.pdf`](pdf/sesion-05-beamer.pdf) | Beamer **sesión 5** — Presentaciones I: narrativa y storyboard |
+| [`pdf/sesion-06-beamer.pdf`](pdf/sesion-06-beamer.pdf) | Beamer **sesión 6** — Presentaciones II: deck, notas y accesibilidad |
+| [`pdf/sesion-07-beamer.pdf`](pdf/sesion-07-beamer.pdf) | Beamer **sesión 7** — Artículos I: estructura, borrador asistido y citas |
+| [`pdf/sesion-08-beamer.pdf`](pdf/sesion-08-beamer.pdf) | Beamer **sesión 8** — Artículos II: revisión agéntica, cierre y showcase |
 
-Fuentes: `tex/docs/ficha-autorizacion-lider-eic.tex`, `tex/beamer/sesion-01.tex`.
+Fuentes: `tex/docs/ficha-autorizacion-lider-eic.tex`, `tex/beamer/sesion-01.tex` … `sesion-08.tex`.
 
 ## Compilar
 
